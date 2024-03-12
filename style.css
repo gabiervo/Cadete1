@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#mainContainer{
+    width: 600px;
+    height:170px;
+    
+    display:flex;
+    flex-direction: row;
+
+    overflow: hidden;
+
+    background-image: linear-gradient(to bottom right, #ff8869, #5f0b95);
+    z-index:0;
+    justify-content: left;
+    align-items: center;
+    position:relative;
+}
+
+#img{
+    height:300px;
+    width:fit-content;
+    position:absolute;
+    left:-100px;
+    top: 0;
+}
+
+#txtContainer{
+    width:465px;
+    height: 170px;
+    position:absolute;
+    right:0;
+    background-color: black;
+
+    display:flex;
+    justify-content: center;
+}
+
+#nameContainer{
+    width: 420px;
+    height:fit-content;
+
+    border: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 5px;
+}
+
+#name{
+    font-family: 'Helvetica';
+    font-weight:bold;
+    font-size: 25px;
+    color: white;
+}
+
+#gradientLine{
+    width:500px;
+    height:1px;
+    background-image: linear-gradient(to right, white, black);
+    position:absolute;
+    top:45px;
+    left:0;
+}
+#story{
+    width:260px;
+    height:fit-content;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+
+    position: absolute;
+    left: 25px;
+    align-self: center;
+    padding-top: 10px;
+}
+
+#roleMain{
+    right:0;
+    bottom:0;
+    z-index:3;
+    border:solid;
+}
+
+.role{
+    position:absolute;
+    font-family: Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:50px;
+    
+    background-image: linear-gradient(to bottom right, #ff8869, #5f0b95);
+    color:transparent;
+    background-clip:text;
+}
