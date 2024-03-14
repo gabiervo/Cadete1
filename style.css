@@ -1,3 +1,15 @@
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,11 +31,16 @@
     position:relative;
 }
 
+@keyframes bgAnimation{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
 #img{
-    height:300px;
+    height:200px;
     width:fit-content;
     position:absolute;
-    left:-100px;
+    left:-25px;
     top: 0;
 }
 
@@ -90,8 +107,11 @@
     font-family: Helvetica, sans-serif;
     font-weight:bold;
     font-size:50px;
-    
-    background-image: linear-gradient(to bottom right, #ff8869, #5f0b95);
+
+    background-image: var(--gradient);
+    background-size: 300%;
+    animation: bgAnimation 10s infinite alternate;
+
     color:transparent;
     background-clip:text;
 }
