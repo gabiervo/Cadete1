@@ -8,6 +8,8 @@
         #ffc75f,
         #f9f871
     );
+    --textColor: rgb(212, 212, 212);
+    --bgColor: rgb(25, 25, 25);
 }
 
 *{
@@ -24,7 +26,7 @@
 
     overflow: hidden;
 
-    background-image: linear-gradient(to bottom right, #ff8869, #5f0b95);
+    background-color: var(--bgColor);
     z-index:0;
     justify-content: left;
     align-items: center;
@@ -49,7 +51,7 @@
     height: 170px;
     position:absolute;
     right:0;
-    background-color: black;
+    background-color: var(--bgColor);
 
     display:flex;
     justify-content: center;
@@ -69,13 +71,13 @@
     font-family: 'Helvetica';
     font-weight:bold;
     font-size: 25px;
-    color: white;
+    color: var(--textColor);
 }
 
 #gradientLine{
     width:500px;
     height:1px;
-    background-image: linear-gradient(to right, white, black);
+    background-image: linear-gradient(to right, white, rgb(25, 25, 25));
     position:absolute;
     top:45px;
     left:0;
@@ -87,7 +89,7 @@
     font-weight: 300;
     font-style: normal;
     font-size: 14px;
-    color: white;
+    color: var(--textColor);
 
     position: absolute;
     left: 25px;
